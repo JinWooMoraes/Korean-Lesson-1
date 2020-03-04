@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<head>
+
+ <title>Korean Online Lesson 1</title>
+
+<link href="Korean Lesson 1 - Style/Korean Lesson 1 - Style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body onload="RandLoad()">
+
+<!-- This Are The Audio Files For The Adjectives -->
+
+<h1 id="header">Word</h1>
+
+<audio id="W1Relaxed">
+<source src="Korean Lesson 1 - Audio Files/Relaxed_HANGAHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W2Few">
+<source src="Korean Lesson 1 - Audio Files/Few_JOKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W3Many">
+<source src="Korean Lesson 1 - Audio Files/Many_MANDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W4Small">
+<source src="Korean Lesson 1 - Audio Files/Small_JAKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W5Wide">
+<source src="Korean Lesson 1 - Audio Files/Wide_NOLPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W6Narrow">
+<source src="Korean Lesson 1 - Audio Files/Narrow_JUPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W7Difficult">
+<source src="Korean Lesson 1 - Audio Files/Difficult_ORIOPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W8Easy">
+<source src="Korean Lesson 1 - Audio Files/Easy_SWIPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W9Cheap">
+<source src="Korean Lesson 1 - Audio Files/Cheap_SSADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W10Expensive">
+<source src="Korean Lesson 1 - Audio Files/Expensive_PISSADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W11Fun">
+<source src="Korean Lesson 1 - Audio Files/Fun_JEMITA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W12NotFun">
+<source src="Korean Lesson 1 - Audio Files/Not Fun_JEMIOPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W13Spicy">
+<source src="Korean Lesson 1 - Audio Files/Spicy_MEUPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W14Dirty">
+<source src="Korean Lesson 1 - Audio Files/Dirty_DOROPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W15Slippery">
+<source src="Korean Lesson 1 - Audio Files/Slippery_MIKUROPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W16Clean">
+<source src="Korean Lesson 1 - Audio Files/Clean_KEKUTHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W17Dark">
+<source src="Korean Lesson 1 - Audio Files/Dark_ODUHPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W18Warm">
+<source src="Korean Lesson 1 - Audio Files/Warm_DAHDUHHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W19Cold">
+<source src="Korean Lesson 1 - Audio Files/Cold_CHUPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W20Fast">
+<source src="Korean Lesson 1 - Audio Files/Fast_PARUDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W21Slow">
+<source src="Korean Lesson 1 - Audio Files/Slow_NURIDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W22Bright">
+<source src="Korean Lesson 1 - Audio Files/Bright_PALKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W23Old">
+<source src="Korean Lesson 1 - Audio Files/Old_NULKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W24Young">
+<source src="Korean Lesson 1 - Audio Files/Young_ORIDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W25Cool">
+<source src="Korean Lesson 1 - Audio Files/Cool_SIUONHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W26Clear">
+<source src="Korean Lesson 1 - Audio Files/Clear_MALKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W27Cloudy">
+<source src="Korean Lesson 1 - Audio Files/Cloudy_HURIDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W28Heavy">
+<source src="Korean Lesson 1 - Audio Files/Heavy_MUGOPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W29Light">
+<source src="Korean Lesson 1 - Audio Files/Light_KABIOPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W30Pretty">
+<source src="Korean Lesson 1 - Audio Files/Pretty_IEPUDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W31Ugly">
+<source src="Korean Lesson 1 - Audio Files/Ugly_MOTSENKIDA.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- These Are The Audio Files For The Verbs -->
+
+
+<audio id="W32Write">
+<source src="Korean Lesson 1 - Audio Files/Write_SSUDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W33Read">
+<source src="Korean Lesson 1 - Audio Files/Read_IKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W34Is">
+<source src="Korean Lesson 1 - Audio Files/Is_ITA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W35NotIs">
+<source src="Korean Lesson 1 - Audio Files/Not Have_OPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W36Talk">
+<source src="Korean Lesson 1 - Audio Files/Talk_IAKIHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W37Go">
+<source src="Korean Lesson 1 - Audio Files/Go_KADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W38Come">
+<source src="Korean Lesson 1 - Audio Files/Come_ODA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W39See">
+<source src="Korean Lesson 1 - Audio Files/See_PODA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W40Meet">
+<source src="Korean Lesson 1 - Audio Files/Meet_MANADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W41Pray">
+<source src="Korean Lesson 1 - Audio Files/Pray_KIDOHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W42Change">
+<source src="Korean Lesson 1 - Audio Files/Change_PAKUDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W43Receive">
+<source src="Korean Lesson 1 - Audio Files/Receive_PADDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W44Give">
+<source src="Korean Lesson 1 - Audio Files/Give_JUDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W45Work">
+<source src="Korean Lesson 1 - Audio Files/Work_ILHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W46Like">
+<source src="Korean Lesson 1 - Audio Files/Like_JODA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W47Dislike">
+<source src="Korean Lesson 1 - Audio Files/Hate_SIROHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W48Play">
+<source src="Korean Lesson 1 - Audio Files/Play_NOLDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W49StandUp">
+<source src="Korean Lesson 1 - Audio Files/Stand Up_IRONADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W50Sit">
+<source src="Korean Lesson 1 - Audio Files/Sit_ANDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W51Drink">
+<source src="Korean Lesson 1 - Audio Files/Drink_MASHIDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W52Eat">
+<source src="Korean Lesson 1 - Audio Files/Eat_MOKDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W53Excersice">
+<source src="Korean Lesson 1 - Audio Files/Exercise_UNDONGHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W54Destroy">
+<source src="Korean Lesson 1 - Audio Files/Destroy_PAGUIHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W55Make">
+<source src="Korean Lesson 1 - Audio Files/Make_MANDULDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W56Wait">
+<source src="Korean Lesson 1 - Audio Files/Wait_KIDARIDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W57Sing">
+<source src="Korean Lesson 1 - Audio Files/Sing_NOREHADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W58TakeOff">
+<source src="Korean Lesson 1 - Audio Files/Take Off_PODTA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W59Wear">
+<source src="Korean Lesson 1 - Audio Files/Wear_IPDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W60Live">
+<source src="Korean Lesson 1 - Audio Files/Live_SALDA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W61Buy">
+<source src="Korean Lesson 1 - Audio Files/Buy_SADA.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="W62Sell">
+<source src="Korean Lesson 1 - Audio Files/Sell_PALDA.mp3" type="audio/mpeg">
+</audio>
+
+<table>
+
+<tr>
+<td>Adjective 형용사</td>
+<td>Verb 동사</td>
+<td>Noun:명사</td>
+</tr>
+
+
+<tr>
+<td onclick="PW1Relaxed()">한가하다:Relaxed</td>
+<td onclick="PW32Write()">쓰다:Write</td>
+<td onclick="">편지:Letter</td>
+</tr>
+
+<tr>
+<td onclick="PW2Few()">적다:Few</td>
+<td onclick="PW33Read()">읽다:Read</td>
+<td onclick="">책:Book</td>
+</tr>
+
+
+<tr>
+<td onclick="PW3Many()">많다:Many</td>
+<td onclick="PW34Is()">있다:Have</td>
+<td>친구:Friend</td>
+</tr>
+
+<tr>
+<td onclick="PW4Small()">작다:Small</td>
+<td onclick="PW35NotIs()">없다:Not Have</td>
+<td>인정:Recognition</td>
+</tr>
+
+<tr>
+<td onclick="PW5Wide()">넓다:Wide</td>
+<td onclick="PW36Talk()">야기하다:Talk</td>
+<td>대화:Conversation</td>
+</tr>
+
+<tr>
+<td onclick="PW6Narrow()">좁다:Narrow</td>
+<td onclick="PW37Go()">가다:Go</td>
+<td onclick="">학교:School</td>
+</tr>
+
+<tr>
+<td onclick="PW7Difficult()">어렵다:Difficult</td>
+<td onclick="PW38Come()">오다:Come</td>
+<td onclick="">집:House</td>
+</tr>
+
+<tr>
+<td onclick="PW8Easy()">쉽다:Easy</td>
+<td onclick="PW39See()">보다:See</td>
+<td>영화:Movie</td>
+</tr>
+
+
+
+<tr>
+<td onclick="PW9Cheap()">싸다:Cheap</td>
+<td onclick="PW40Meet()">만나다:Meet</td>
+<td>누군가:Someone</td>
+</tr>
+
+<tr>
+<td onclick="PW10Expensive()">비싸다:Expensive</td>
+<td onclick="PW41Pray()">기도하다:Pray</td>
+<td>교회:Church</td>
+</tr>
+
+<tr>
+<td onclick="PW11Fun()">재미있다:Fun</td>
+<td onclick="PW42Change()">바꾸다:Change</td>
+<td>옷:Clothes</td>
+</tr>
+
+<tr>
+<td onclick="PW12NotFun()">재미없다:Not Fun</td>
+<td onclick="PW43Receive()">받다:Receive</td>
+<td>설명:Instruction/Explenation</td>
+</tr>
+
+<tr>
+<td onclick="PW13Spicy()">매웁다:Spicy</td>
+<td onclick="PW44Give()">주다:Give</td>
+<td>기부:Donation</td>
+</tr>
+
+<tr>
+<td onclick="PW14Dirty()">더럽다:Dirty</td>
+<td onclick="PW45Work()">일하다:Work</td>
+<td>돈:Money</td>
+</tr>
+
+<tr>
+<td onclick="PW15Slippery()">미끄럽다:Slippery</td>
+<td onclick="PW46Like()">좋다:Like</td>
+<td>식당:Restaurant</td>
+</tr>
+
+<tr>
+<td onclick="PW16Clean()">깨끗하다:Clean</td>
+<td onclick="PW47Dislike()">싫어하다:Dislike</td>
+<td>범죄:Crime</td>
+</tr>
+
+<tr>
+<td onclick="PW17Dark()">어둡다:Dark</td>
+<td onclick="PW48Play()">놀다:Play</td>
+<td>놀이터:Playground</td>
+</tr>
+
+<tr>
+<td onclick="PW18Warm()">따뜻하다:Warm</td>
+<td onclick="PW49StandUp()">일어나다:Stand Up</td>
+<td>침대:Bed</td>
+</tr>
+
+<tr>
+<td onclick="PW19Cold()">춥다:Cold</td>
+<td onclick="PW50Sit()">앉다:Sit</td>
+<td>의자:Chair</td>
+</tr>
+
+
+<tr>
+<td onclick="PW20Fast()">빠르다:Fast</td>
+<td onclick="PW51Drink()">마시다:Drink</td>
+<td>음료수:Drink</td>
+</tr>
+
+<tr>
+<td onclick="PW21Slow()">느리다:Slow</td>
+<td onclick="PW52Eat()">먹다:Eat</td>
+<td onclick="">음식:Food</td>
+</tr>
+
+<tr>
+<td onclick="PW22Bright()">밝다:Bright</td>
+<td onclick="PW53Excersice()">운동하다:Excersice</td>
+<td>공원:Park</td>
+</tr>
+
+<tr>
+<td onclick="PW23Old()">늙다:Old</td>
+<td onclick="PW54Destroy()">파괴하다:Destroy</td>
+<td>전쟁:War</td>
+</tr>
+
+<tr>
+<td onclick="PW24Young()">어리다:Young</td>
+<td onclick="PW55Make()">만들다:Make</td>
+<td>만두:Dumpling </td>
+</tr>
+
+<tr>
+<td onclick="PW25Cool()">시원하다:Cool</td>
+<td onclick="PW56Wait()">기다리다:Wait</td>
+<td>버스 정류장:Bus Stop</td>
+</tr>
+
+<tr>
+<td onclick="PW26Clear()">맑다:Clear</td>
+<td onclick="PW57Sing()">노래하다:Sing</td>
+<td>극장:Theater </td>
+</tr>
+
+<tr>
+<td onclick="PW27Cloudy()">흐리다:Cloudy</td>
+<td onclick="PW58TakeOff()">벗다:Take Off</td>
+<td>구두:Shoe</td>
+</tr>
+
+<tr>
+<td onclick="PW28Heavy()">무겁다:Heavy</td>
+<td onclick="PW59Wear()">입다:Wear</td>
+<td>바지:Pants</td>
+</tr>
+
+<tr>
+<td onclick="PW29Light()">가볍다:Light</td>
+<td onclick="PW60Live()">살다:Live</td>
+<td>나라:Country</td>
+</tr>
+
+<tr>
+<td onclick="PW30Pretty()">예쁘다:Pretty</td>
+<td onclick="PW61Buy()">사다:Buy</td>
+<td>상품:Product</td>
+</tr>
+
+<tr>
+<td onclick="PW31Ugly()">못생기다:Ugly</td>
+<td onclick="PW62Sell()">팔다:Sell</td>
+<td>재산:Property</td>
+</tr>
+
+
+</table>
+
+
+<script>
+
+// These Variables Store The Vocab Word's Sounds Introduced In The HTML
+
+// These Variables Store All The Adjectives in HTML
+
+var W1Relaxed = document.getElementById("W1Relaxed");
+function PW1Relaxed(){W1Relaxed.play();document.getElementById("header").innerHTML= vocab[0].Word;}
+
+var W2Few = document.getElementById("W2Few");
+function PW2Few(){W2Few.play();document.getElementById("header").innerHTML= vocab[1].Word;}
+
+var W3Many = document.getElementById("W3Many");
+function PW3Many(){W3Many.play();document.getElementById("header").innerHTML= vocab[2].Word;}
+
+var W4Small = document.getElementById("W4Small");
+function PW4Small(){W4Small.play();document.getElementById("header").innerHTML= vocab[3].Word;}
+
+var W5Wide = document.getElementById("W5Wide");
+function PW5Wide(){W5Wide.play();document.getElementById("header").innerHTML= vocab[4].Word;}
+
+var W6Narrow = document.getElementById("W6Narrow");
+function PW6Narrow(){W6Narrow.play();document.getElementById("header").innerHTML= vocab[5].Word;}
+
+var W7Difficult = document.getElementById("W7Difficult");
+function PW7Difficult(){W7Difficult.play();document.getElementById("header").innerHTML= vocab[6].Word;}
+
+var W8Easy = document.getElementById("W8Easy");
+function PW8Easy(){W8Easy.play();document.getElementById("header").innerHTML= vocab[7].Word;}
+
+var W9Cheap = document.getElementById("W9Cheap");
+function PW9Cheap(){W9Cheap.play();document.getElementById("header").innerHTML= vocab[8].Word;}
+
+var W10Expensive = document.getElementById("W10Expensive");
+function PW10Expensive(){W10Expensive.play();document.getElementById("header").innerHTML= vocab[9].Word;}
+
+var W11Fun = document.getElementById("W11Fun");
+function PW11Fun(){W11Fun.play();document.getElementById("header").innerHTML= vocab[10].Word;}
+
+var W12NotFun = document.getElementById("W12NotFun");
+function PW12NotFun(){W12NotFun.play();document.getElementById("header").innerHTML= vocab[11].Word;}
+
+var W13Spicy = document.getElementById("W13Spicy");
+function PW13Spicy(){W13Spicy.play();document.getElementById("header").innerHTML= vocab[12].Word;}
+
+var W14Dirty = document.getElementById("W14Dirty");
+function PW14Dirty(){W14Dirty.play();document.getElementById("header").innerHTML= vocab[13].Word;}
+
+var W15Slippery = document.getElementById("W15Slippery");
+function PW15Slippery(){W15Slippery.play();document.getElementById("header").innerHTML= vocab[14].Word;}
+
+var W16Clean = document.getElementById("W16Clean");
+function PW16Clean(){W16Clean.play();document.getElementById("header").innerHTML= vocab[15].Word;}
+
+var W17Dark = document.getElementById("W17Dark");
+function PW17Dark(){W17Dark.play();document.getElementById("header").innerHTML= vocab[16].Word;}
+
+var W18Warm = document.getElementById("W18Warm");
+function PW18Warm(){W18Warm.play();document.getElementById("header").innerHTML= vocab[17].Word;}
+
+var W19Cold = document.getElementById("W19Cold");
+function PW19Cold(){W19Cold.play();document.getElementById("header").innerHTML= vocab[18].Word;}
+
+var W20Fast = document.getElementById("W20Fast");
+function PW20Fast(){W20Fast.play();document.getElementById("header").innerHTML= vocab[19].Word;}
+
+var W21Slow = document.getElementById("W21Slow");
+function PW21Slow(){W21Slow.play();document.getElementById("header").innerHTML= vocab[20].Word;}
+
+var W22Bright = document.getElementById("W22Bright");
+function PW22Bright(){W22Bright.play();document.getElementById("header").innerHTML= vocab[21].Word;}
+
+var W23Old = document.getElementById("W23Old");
+function PW23Old(){W23Old.play();document.getElementById("header").innerHTML= vocab[22].Word;}
+
+var W24Young = document.getElementById("W24Young");
+function PW24Young(){W24Young.play();document.getElementById("header").innerHTML= vocab[23].Word;}
+
+var W25Cool = document.getElementById("W25Cool");
+function PW25Cool(){W25Cool.play();document.getElementById("header").innerHTML= vocab[24].Word;}
+
+var W26Clear = document.getElementById("W26Clear");
+function PW26Clear(){W26Clear.play();document.getElementById("header").innerHTML= vocab[25].Word;}
+
+var W27Cloudy = document.getElementById("W27Cloudy");
+function PW27Cloudy(){W27Cloudy.play();document.getElementById("header").innerHTML= vocab[26].Word;}
+
+var W28Heavy = document.getElementById("W28Heavy");
+function PW28Heavy(){W28Heavy.play();document.getElementById("header").innerHTML= vocab[27].Word;}
+
+var W29Light = document.getElementById("W29Light");
+function PW29Light(){W29Light.play();document.getElementById("header").innerHTML= vocab[28].Word;}
+
+var W30Pretty = document.getElementById("W30Pretty");
+function PW30Pretty(){W30Pretty.play();document.getElementById("header").innerHTML= vocab[29].Word;}
+
+var W31Ugly = document.getElementById("W31Ugly");
+function PW31Ugly(){W31Ugly.play();document.getElementById("header").innerHTML= vocab[30].Word;}
+
+// These Variables Store All The Verbs in HTML
+
+var W32Write = document.getElementById("W32Write");
+function PW32Write(){W32Write.play();document.getElementById("header").innerHTML= vocab[31].Word;}
+
+var W33Read = document.getElementById("W33Read");
+function PW33Read(){W33Read.play();document.getElementById("header").innerHTML= vocab[32].Word;}
+
+var W34Is = document.getElementById("W34Is");
+function PW34Is(){W34Is.play();document.getElementById("header").innerHTML= vocab[33].Word;}
+
+var W35NotIs = document.getElementById("W35NotIs");
+function PW35NotIs(){W35NotIs.play();document.getElementById("header").innerHTML= vocab[34].Word;}
+
+var W36Talk = document.getElementById("W36Talk");
+function PW36Talk(){W36Talk.play();document.getElementById("header").innerHTML= vocab[35].Word;}
+
+var W37Go = document.getElementById("W37Go");
+function PW37Go(){W37Go.play();document.getElementById("header").innerHTML= vocab[36].Word;}
+
+var W38Come = document.getElementById("W38Come");
+function PW38Come(){W38Come.play();document.getElementById("header").innerHTML= vocab[37].Word;}
+
+var W39See = document.getElementById("W39See");
+function PW39See(){W39See.play();document.getElementById("header").innerHTML= vocab[38].Word;}
+
+var W40Meet = document.getElementById("W40Meet");
+function PW40Meet(){W40Meet.play();document.getElementById("header").innerHTML= vocab[39].Word;}
+
+var W41Pray = document.getElementById("W41Pray");
+function PW41Pray(){W41Pray.play();document.getElementById("header").innerHTML= vocab[40].Word;}
+
+var W42Change = document.getElementById("W42Change");
+function PW42Change(){W42Change.play();document.getElementById("header").innerHTML= vocab[41].Word;}
+
+var W43Receive = document.getElementById("W43Receive");
+function PW43Receive(){W43Receive.play();document.getElementById("header").innerHTML= vocab[42].Word;}
+
+var W44Give = document.getElementById("W44Give");
+function PW44Give(){W44Give.play();document.getElementById("header").innerHTML= vocab[43].Word;}
+
+var W45Work = document.getElementById("W45Work");
+function PW45Work(){W45Work.play();document.getElementById("header").innerHTML= vocab[44].Word;}
+
+var W46Like = document.getElementById("W46Like");
+function PW46Like(){W46Like.play();document.getElementById("header").innerHTML= vocab[45].Word;}
+
+var W47Dislike = document.getElementById("W47Dislike");
+function PW47Dislike(){W47Dislike.play();document.getElementById("header").innerHTML= vocab[46].Word;}
+
+var W48Play = document.getElementById("W48Play");
+function PW48Play(){W48Play.play();document.getElementById("header").innerHTML= vocab[47].Word;}
+
+var W49StandUp = document.getElementById("W49StandUp");
+function PW49StandUp(){W49StandUp.play();document.getElementById("header").innerHTML= vocab[48].Word;}
+
+var W50Sit = document.getElementById("W50Sit");
+function PW50Sit(){W50Sit.play();document.getElementById("header").innerHTML= vocab[49].Word;}
+
+var W51Drink = document.getElementById("W51Drink");
+function PW51Drink(){W51Drink.play();document.getElementById("header").innerHTML= vocab[50].Word;}
+
+var W52Eat = document.getElementById("W52Eat");
+function PW52Eat(){W52Eat.play();document.getElementById("header").innerHTML= vocab[51].Word;}
+
+var W53Excersice = document.getElementById("W53Excersice");
+function PW53Excersice(){W53Excersice.play();document.getElementById("header").innerHTML= vocab[52].Word;}
+
+var W54Destroy = document.getElementById("W54Destroy");
+function PW54Destroy(){W54Destroy.play();document.getElementById("header").innerHTML= vocab[53].Word;}
+
+var W55Make = document.getElementById("W55Make");
+function PW55Make(){W55Make.play();document.getElementById("header").innerHTML= vocab[54].Word;}
+
+var W56Wait = document.getElementById("W56Wait");
+function PW56Wait(){W56Wait.play();document.getElementById("header").innerHTML= vocab[55].Word;}
+
+var W57Sing = document.getElementById("W57Sing");
+function PW57Sing(){W57Sing.play();document.getElementById("header").innerHTML= vocab[56].Word;}
+
+var W58TakeOff = document.getElementById("W58TakeOff");
+function PW58TakeOff(){W58TakeOff.play();document.getElementById("header").innerHTML= vocab[57].Word;}
+
+var W59Wear = document.getElementById("W59Wear");
+function PW59Wear(){W59Wear.play();document.getElementById("header").innerHTML= vocab[58].Word;}
+
+var W60Live = document.getElementById("W60Live");
+function PW60Live(){W60Live.play();document.getElementById("header").innerHTML= vocab[59].Word;}
+
+var W61Buy = document.getElementById("W61Buy");
+function PW61Buy(){W61Buy.play();document.getElementById("header").innerHTML= vocab[60].Word;}
+
+var W62Sell = document.getElementById("W62Sell");
+function PW62Sell(){W62Sell.play();document.getElementById("header").innerHTML= vocab[61].Word;}
+
+// These Variables Store All The Nouns in HTML
+
+// Create Array Nesting Objects To Store The Info Of Each Vocab Word
+
+let vocab = [];
+vocab[0]={Word:"한가하다:Relaxed",Sound:W1Relaxed,Type:"Adj"};
+vocab[1]={Word:"적다:Few",Sound:W2Few,Type:"Adj"};
+vocab[2]={Word:"많다:Many",Sound:W3Many,Type:"Adj"};
+vocab[3]={Word:"작다:Small",Sound:W4Small,Type:"Adj"};
+vocab[4]={Word:"넓다:Wide",Sound:W5Wide,Type:"Adj"};
+vocab[5]={Word:"좁다:Narrow",Sound:W6Narrow,Type:"Adj"};
+vocab[6]={Word:"어렵다:Difficult",Sound:W7Difficult,Type:"Adj"};
+vocab[7]={Word:"쉽다:Easy",Sound:W8Easy,Type:"Adj"};
+vocab[8]={Word:"싸다:Cheap",Sound:W9Cheap,Type:"Adj"};
+vocab[9]={Word:"비싸다:Expensive",Sound:W10Expensive,Type:"Adj"};
+vocab[10]={Word:"재미있다:Fun",Sound:W11Fun,Type:"Adj"};
+vocab[11]={Word:"재미없다:Not Fun",Sound:W12NotFun,Type:"Adj"};
+vocab[12]={Word:"매웁다:Spicy",Sound:W13Spicy,Type:"Adj"};
+vocab[13]={Word:"더럽다:Dirty",Sound:W14Dirty,Type:"Adj"};
+vocab[14]={Word:"미끄럽다:Slippery",Sound:W15Slippery,Type:"Adj"};
+vocab[15]={Word:"깨끗하다:Clean",Sound:W16Clean,Type:"Adj"};
+vocab[16]={Word:"어둡다:Dark",Sound:W17Dark,Type:"Adj"};
+vocab[17]={Word:"따뜻하다:Warm",Sound:W18Warm,Type:"Adj"};
+vocab[18]={Word:"춥다:Cold",Sound:W19Cold,Type:"Adj"};
+vocab[19]={Word:"빠르다:Fast",Sound:W20Fast,Type:"Adj"};
+vocab[20]={Word:"느리다:Slow",Sound:W21Slow,Type:"Adj"};
+vocab[21]={Word:"밝다:Bright",Sound:W22Bright,Type:"Adj"};
+vocab[22]={Word:"늙다:Old",Sound:W23Old,Type:"Adj"};
+vocab[23]={Word:"어리다:Young",Sound:W24Young,Type:"Adj"};
+vocab[24]={Word:"시원하다:Cool",Sound:W25Cool,Type:"Adj"};
+vocab[25]={Word:"맑다:Clear",Sound:W26Clear,Type:"Adj"};
+vocab[26]={Word:"흐리다:Cloudy",Sound:W27Cloudy,Type:"Adj"};
+vocab[27]={Word:"무겁다:Heavy",Sound:W28Heavy,Type:"Adj"};
+vocab[28]={Word:"가볍다:Light",Sound:W29Light,Type:"Adj"};
+vocab[29]={Word:"예쁘다:Pretty",Sound:W30Pretty,Type:"Adj"};
+vocab[30]={Word:"못생기다:Ugly",Sound:W31Ugly,Type:"Adj"};
+vocab[31]={Word:"쓰다:Write",Sound:W32Write,Type:"Ver"};
+vocab[32]={Word:"읽다:Read",Sound:W33Read,Type:"Ver"};
+vocab[33]={Word:"있다:Have",Sound:W34Is,Type:"Ver"};
+vocab[34]={Word:"없다:Not Have",Sound:W35NotIs,Type:"Ver"};
+vocab[35]={Word:"야기하다:Talk",Sound:W36Talk,Type:"Ver"};
+vocab[36]={Word:"가다:Go",Sound:W37Go,Type:"Ver"};
+vocab[37]={Word:"오다:Come",Sound:W38Come,Type:"Ver"};
+vocab[38]={Word:"보다:See",Sound:W39See,Type:"Ver"};
+vocab[39]={Word:"만나다:Meet",Sound:W40Meet,Type:"Ver"};
+vocab[40]={Word:"기도하다:Pray",Sound:W41Pray,Type:"Ver"};
+vocab[41]={Word:"바꾸다:Change",Sound:W42Change,Type:"Ver"};
+vocab[42]={Word:"받다:Receive",Sound:W43Receive,Type:"Ver"};
+vocab[43]={Word:"주다:Give",Sound:W44Give,Type:"Ver"};
+vocab[44]={Word:"일하다:Work",Sound:W45Work,Type:"Ver"};
+vocab[45]={Word:"좋다:Like",Sound:W46Like,Type:"Ver"};
+vocab[46]={Word:"싫어하다:Dislike",Sound:W47Dislike,Type:"Ver"};
+vocab[47]={Word:"놀다:Play",Sound:W48Play,Type:"Ver"};
+vocab[48]={Word:"일어나다:Stand Up",Sound:W49StandUp,Type:"Ver"};
+vocab[49]={Word:"앉다:Sit",Sound:W50Sit,Type:"Ver"};
+vocab[50]={Word:"마시다:Drink",Sound:W51Drink,Type:"Ver"};
+vocab[51]={Word:"먹다:Eat",Sound:W52Eat,Type:"Ver"};
+vocab[52]={Word:"운동하다:Excersice",Sound:W52Eat,Type:"Ver"};
+vocab[53]={Word:"파괴하다:Destroy",Sound:W53Excersice,Type:"Ver"};
+vocab[54]={Word:"만들다:Make",Sound:W55Make,Type:"Ver"};
+vocab[55]={Word:"기다리다:Wait",Sound:W56Wait,Type:"Ver"};
+vocab[56]={Word:"노래하다:Sing",Sound:W57Sing,Type:"Ver"};
+vocab[57]={Word:"벗다:Take Off",Sound:W58TakeOff,Type:"Ver"};
+vocab[58]={Word:"입다:Wear",Sound:W59Wear,Type:"Ver"};
+vocab[59]={Word:"살다:Live",Sound:W60Live,Type:"Ver"};
+vocab[60]={Word:"사다:Buy",Sound:W61Buy,Type:"Ver"};
+vocab[61]={Word:"팔다:Sell",Sound:W62Sell,Type:"Ver"};
+
+// This Selects Random Elements = Math.floor(Math.random() * NumberLi.length)
+
+/*Then create the variable that is going to store a random whole number.
+Elements of objects need to shate the same array "value"*/
+
+var random = Math.floor(Math.random()*vocab.length);
+
+/*Then create the function that is going to use the random number created to acess
+the different elements nested in the object inside the array*/
+
+function RandLoad(){
+document.getElementById("header").innerHTML=vocab[random].Word;
+vocab[random].Sound.play();
+}
+
+
+
+</script>
+
+</body>
+</html>
