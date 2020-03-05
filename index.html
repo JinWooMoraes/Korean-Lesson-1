@@ -950,7 +950,7 @@ vocab[58]={Word:"입다:Vestir",Sound:W59Wear,Type:"Ver"};
 vocab[59]={Word:"살다:Viver",Sound:W60Live,Type:"Ver"};
 vocab[60]={Word:"사다:Comprar",Sound:W61Buy,Type:"Ver"};
 vocab[61]={Word:"팔다:Vender",Sound:W62Sell,Type:"Ver"};
-vocab[62]={Word:"편지:Letter",Sound:W63Letter,Type:"Ver"};
+vocab[62]={Word:"편지:Carta",Sound:W63Letter,Type:"Ver"};
 vocab[63]={Word:"책:Book",Sound:W64Book,Type:"Noun"};
 vocab[64]={Word:"친구:Friend",Sound:W65Friend,Type:"Noun"};
 vocab[65]={Word:"인정:Recognition",Sound:W66Recognition,Type:"Noun"};
@@ -996,12 +996,14 @@ the different elements nested in the object inside the array*/
 function RandLoad(){
 document.getElementById("header").innerHTML=vocab[random].Word;
 vocab[random].Sound.play();
+random = Math.floor(Math.random()*vocab.length);
 }
 
 // This Function Selects Elements
 
 function SelOrd(){
-for (var i=0;i<10;i++){document.getElementById("header").innerHTML= vocab[i].Word;}}
+for (var i=0;i<10;i++){document.getElementById("header").innerHTML= vocab[i].Word;
+vocab[i].Sound.play();}}
 
 </script>
 
