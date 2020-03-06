@@ -10,8 +10,9 @@
 
 <!-- This Are The Audio Files For The Adjectives -->
 
-<h1 id="header">Word</h1>
+<h1 id="header" onclick="HeadSoPlay()">Word</h1> 
 <p onclick="SelOrd()">Click</p>
+
 
 <audio id="W1Relaxed">
 <source src="Korean Lesson 1 - Audio Files/Relaxed_HANGAHADA.mp3" type="audio/mpeg">
@@ -598,292 +599,294 @@
 
 <script>
 
+// W2Few.play();document.getElementById("header").innerHTML= vocab[1].Word;
+
 // These Variables Store The Vocab Word's Sounds Introduced In The HTML
 
 // These Variables Store All The Adjectives in HTML
 
 var W1Relaxed = document.getElementById("W1Relaxed");
-function PW1Relaxed(){W1Relaxed.play();document.getElementById("header").innerHTML= vocab[0].Word;}
+function PW1Relaxed(){random = 0;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W2Few = document.getElementById("W2Few");
-function PW2Few(){W2Few.play();document.getElementById("header").innerHTML= vocab[1].Word;}
+function PW2Few(){random = 1;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W3Many = document.getElementById("W3Many");
-function PW3Many(){W3Many.play();document.getElementById("header").innerHTML= vocab[2].Word;}
+function PW3Many(){random =2;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W4Small = document.getElementById("W4Small");
-function PW4Small(){W4Small.play();document.getElementById("header").innerHTML= vocab[3].Word;}
+function PW4Small(){random =3;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W5Wide = document.getElementById("W5Wide");
-function PW5Wide(){W5Wide.play();document.getElementById("header").innerHTML= vocab[4].Word;}
+function PW5Wide(){random =4;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W6Narrow = document.getElementById("W6Narrow");
-function PW6Narrow(){W6Narrow.play();document.getElementById("header").innerHTML= vocab[5].Word;}
+function PW6Narrow(){random =5;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W7Difficult = document.getElementById("W7Difficult");
-function PW7Difficult(){W7Difficult.play();document.getElementById("header").innerHTML= vocab[6].Word;}
+function PW7Difficult(){random =6;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W8Easy = document.getElementById("W8Easy");
-function PW8Easy(){W8Easy.play();document.getElementById("header").innerHTML= vocab[7].Word;}
+function PW8Easy(){random =7;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W9Cheap = document.getElementById("W9Cheap");
-function PW9Cheap(){W9Cheap.play();document.getElementById("header").innerHTML= vocab[8].Word;}
+function PW9Cheap(){random =8;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W10Expensive = document.getElementById("W10Expensive");
-function PW10Expensive(){W10Expensive.play();document.getElementById("header").innerHTML= vocab[9].Word;}
+function PW10Expensive(){random =9;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W11Fun = document.getElementById("W11Fun");
-function PW11Fun(){W11Fun.play();document.getElementById("header").innerHTML= vocab[10].Word;}
+function PW11Fun(){random =10;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W12NotFun = document.getElementById("W12NotFun");
-function PW12NotFun(){W12NotFun.play();document.getElementById("header").innerHTML= vocab[11].Word;}
+function PW12NotFun(){random =11;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W13Spicy = document.getElementById("W13Spicy");
-function PW13Spicy(){W13Spicy.play();document.getElementById("header").innerHTML= vocab[12].Word;}
+function PW13Spicy(){random =12;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W14Dirty = document.getElementById("W14Dirty");
-function PW14Dirty(){W14Dirty.play();document.getElementById("header").innerHTML= vocab[13].Word;}
+function PW14Dirty(){random =13;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W15Slippery = document.getElementById("W15Slippery");
-function PW15Slippery(){W15Slippery.play();document.getElementById("header").innerHTML= vocab[14].Word;}
+function PW15Slippery(){random =14;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W16Clean = document.getElementById("W16Clean");
-function PW16Clean(){W16Clean.play();document.getElementById("header").innerHTML= vocab[15].Word;}
+function PW16Clean(){random =15;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W17Dark = document.getElementById("W17Dark");
-function PW17Dark(){W17Dark.play();document.getElementById("header").innerHTML= vocab[16].Word;}
+function PW17Dark(){random =16;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W18Warm = document.getElementById("W18Warm");
-function PW18Warm(){W18Warm.play();document.getElementById("header").innerHTML= vocab[17].Word;}
+function PW18Warm(){random =17;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W19Cold = document.getElementById("W19Cold");
-function PW19Cold(){W19Cold.play();document.getElementById("header").innerHTML= vocab[18].Word;}
+function PW19Cold(){random =18;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W20Fast = document.getElementById("W20Fast");
-function PW20Fast(){W20Fast.play();document.getElementById("header").innerHTML= vocab[19].Word;}
+function PW20Fast(){random =19;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W21Slow = document.getElementById("W21Slow");
-function PW21Slow(){W21Slow.play();document.getElementById("header").innerHTML= vocab[20].Word;}
+function PW21Slow(){random =20;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W22Bright = document.getElementById("W22Bright");
-function PW22Bright(){W22Bright.play();document.getElementById("header").innerHTML= vocab[21].Word;}
+function PW22Bright(){random =21;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W23Old = document.getElementById("W23Old");
-function PW23Old(){W23Old.play();document.getElementById("header").innerHTML= vocab[22].Word;}
+function PW23Old(){random =22;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W24Young = document.getElementById("W24Young");
-function PW24Young(){W24Young.play();document.getElementById("header").innerHTML= vocab[23].Word;}
+function PW24Young(){random =23;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W25Cool = document.getElementById("W25Cool");
-function PW25Cool(){W25Cool.play();document.getElementById("header").innerHTML= vocab[24].Word;}
+function PW25Cool(){random =24;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W26Clear = document.getElementById("W26Clear");
-function PW26Clear(){W26Clear.play();document.getElementById("header").innerHTML= vocab[25].Word;}
+function PW26Clear(){random =25;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W27Cloudy = document.getElementById("W27Cloudy");
-function PW27Cloudy(){W27Cloudy.play();document.getElementById("header").innerHTML= vocab[26].Word;}
+function PW27Cloudy(){random =26;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W28Heavy = document.getElementById("W28Heavy");
-function PW28Heavy(){W28Heavy.play();document.getElementById("header").innerHTML= vocab[27].Word;}
+function PW28Heavy(){random =27;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W29Light = document.getElementById("W29Light");
-function PW29Light(){W29Light.play();document.getElementById("header").innerHTML= vocab[28].Word;}
+function PW29Light(){random =28;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W30Pretty = document.getElementById("W30Pretty");
-function PW30Pretty(){W30Pretty.play();document.getElementById("header").innerHTML= vocab[29].Word;}
+function PW30Pretty(){random =29;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W31Ugly = document.getElementById("W31Ugly");
-function PW31Ugly(){W31Ugly.play();document.getElementById("header").innerHTML= vocab[30].Word;}
+function PW31Ugly(){random =30;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 // These Variables Store All The Verbs in HTML
 
 var W32Write = document.getElementById("W32Write");
-function PW32Write(){W32Write.play();document.getElementById("header").innerHTML= vocab[31].Word;}
+function PW32Write(){random =31;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W33Read = document.getElementById("W33Read");
-function PW33Read(){W33Read.play();document.getElementById("header").innerHTML= vocab[32].Word;}
+function PW33Read(){random =32;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W34Is = document.getElementById("W34Is");
-function PW34Is(){W34Is.play();document.getElementById("header").innerHTML= vocab[33].Word;}
+function PW34Is(){random =33;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W35NotIs = document.getElementById("W35NotIs");
-function PW35NotIs(){W35NotIs.play();document.getElementById("header").innerHTML= vocab[34].Word;}
+function PW35NotIs(){random =34;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W36Talk = document.getElementById("W36Talk");
-function PW36Talk(){W36Talk.play();document.getElementById("header").innerHTML= vocab[35].Word;}
+function PW36Talk(){random =35;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W37Go = document.getElementById("W37Go");
-function PW37Go(){W37Go.play();document.getElementById("header").innerHTML= vocab[36].Word;}
+function PW37Go(){random =36;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W38Come = document.getElementById("W38Come");
-function PW38Come(){W38Come.play();document.getElementById("header").innerHTML= vocab[37].Word;}
+function PW38Come(){random =37;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W39See = document.getElementById("W39See");
-function PW39See(){W39See.play();document.getElementById("header").innerHTML= vocab[38].Word;}
+function PW39See(){random =38;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W40Meet = document.getElementById("W40Meet");
-function PW40Meet(){W40Meet.play();document.getElementById("header").innerHTML= vocab[39].Word;}
+function PW40Meet(){random =39;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W41Pray = document.getElementById("W41Pray");
-function PW41Pray(){W41Pray.play();document.getElementById("header").innerHTML= vocab[40].Word;}
+function PW41Pray(){random =40;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W42Change = document.getElementById("W42Change");
-function PW42Change(){W42Change.play();document.getElementById("header").innerHTML= vocab[41].Word;}
+function PW42Change(){random =41;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W43Receive = document.getElementById("W43Receive");
-function PW43Receive(){W43Receive.play();document.getElementById("header").innerHTML= vocab[42].Word;}
+function PW43Receive(){random =42;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W44Give = document.getElementById("W44Give");
-function PW44Give(){W44Give.play();document.getElementById("header").innerHTML= vocab[43].Word;}
+function PW44Give(){random =43;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W45Work = document.getElementById("W45Work");
-function PW45Work(){W45Work.play();document.getElementById("header").innerHTML= vocab[44].Word;}
+function PW45Work(){random =44;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W46Like = document.getElementById("W46Like");
-function PW46Like(){W46Like.play();document.getElementById("header").innerHTML= vocab[45].Word;}
+function PW46Like(){random =45;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W47Dislike = document.getElementById("W47Dislike");
-function PW47Dislike(){W47Dislike.play();document.getElementById("header").innerHTML= vocab[46].Word;}
+function PW47Dislike(){random =46;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W48Play = document.getElementById("W48Play");
-function PW48Play(){W48Play.play();document.getElementById("header").innerHTML= vocab[47].Word;}
+function PW48Play(){random =47;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W49StandUp = document.getElementById("W49StandUp");
-function PW49StandUp(){W49StandUp.play();document.getElementById("header").innerHTML= vocab[48].Word;}
+function PW49StandUp(){random =48;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W50Sit = document.getElementById("W50Sit");
-function PW50Sit(){W50Sit.play();document.getElementById("header").innerHTML= vocab[49].Word;}
+function PW50Sit(){random =49;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W51Drink = document.getElementById("W51Drink");
-function PW51Drink(){W51Drink.play();document.getElementById("header").innerHTML= vocab[50].Word;}
+function PW51Drink(){random =50;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W52Eat = document.getElementById("W52Eat");
-function PW52Eat(){W52Eat.play();document.getElementById("header").innerHTML= vocab[51].Word;}
+function PW52Eat(){random =51;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W53Excersice = document.getElementById("W53Excersice");
-function PW53Excersice(){W53Excersice.play();document.getElementById("header").innerHTML= vocab[52].Word;}
+function PW53Excersice(){random =52;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W54Destroy = document.getElementById("W54Destroy");
-function PW54Destroy(){W54Destroy.play();document.getElementById("header").innerHTML= vocab[53].Word;}
+function PW54Destroy(){random =53;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W55Make = document.getElementById("W55Make");
-function PW55Make(){W55Make.play();document.getElementById("header").innerHTML= vocab[54].Word;}
+function PW55Make(){random =54;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W56Wait = document.getElementById("W56Wait");
-function PW56Wait(){W56Wait.play();document.getElementById("header").innerHTML= vocab[55].Word;}
+function PW56Wait(){random =55;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W57Sing = document.getElementById("W57Sing");
-function PW57Sing(){W57Sing.play();document.getElementById("header").innerHTML= vocab[56].Word;}
+function PW57Sing(){random =56;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W58TakeOff = document.getElementById("W58TakeOff");
-function PW58TakeOff(){W58TakeOff.play();document.getElementById("header").innerHTML= vocab[57].Word;}
+function PW58TakeOff(){random =57;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W59Wear = document.getElementById("W59Wear");
-function PW59Wear(){W59Wear.play();document.getElementById("header").innerHTML= vocab[58].Word;}
+function PW59Wear(){random =58;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W60Live = document.getElementById("W60Live");
-function PW60Live(){W60Live.play();document.getElementById("header").innerHTML= vocab[59].Word;}
+function PW60Live(){random =59;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W61Buy = document.getElementById("W61Buy");
-function PW61Buy(){W61Buy.play();document.getElementById("header").innerHTML= vocab[60].Word;}
+function PW61Buy(){random =60;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W62Sell = document.getElementById("W62Sell");
-function PW62Sell(){W62Sell.play();document.getElementById("header").innerHTML= vocab[61].Word;}
+function PW62Sell(){random =61;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 // These Variables Store All The Nouns in HTML
 
 var W63Letter = document.getElementById("W63Letter");
-function PW63Letter(){W63Letter.play();document.getElementById("header").innerHTML= vocab[62].Word;}
+function PW63Letter(){random =62;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W64Book = document.getElementById("W64Book");
-function PW64Book(){W64Book.play();document.getElementById("header").innerHTML= vocab[63].Word;}
+function PW64Book(){random =63;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W65Friend = document.getElementById("W65Friend");
-function PW65Friend(){W65Friend.play();document.getElementById("header").innerHTML= vocab[64].Word;}
+function PW65Friend(){random =64;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W66Recognition = document.getElementById("W66Recognition");
-function PW66Recognition(){W66Recognition.play();document.getElementById("header").innerHTML= vocab[65].Word;}
+function PW66Recognition(){random =65;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W67Conversation = document.getElementById("W67Conversation");
-function PW67Conversation(){W67Conversation.play();document.getElementById("header").innerHTML= vocab[66].Word;}
+function PW67Conversation(){random =66;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W68School = document.getElementById("W68School");
-function PW68School(){W68School.play();document.getElementById("header").innerHTML= vocab[67].Word;}
+function PW68School(){random =67;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W69House = document.getElementById("W69House");
-function PW69House(){W69House.play();document.getElementById("header").innerHTML= vocab[68].Word;}
+function PW69House(){random =68;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W70Movie = document.getElementById("W70Movie");
-function PW70Movie(){W70Movie.play();document.getElementById("header").innerHTML= vocab[69].Word;}
+function PW70Movie(){random =69;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W71Someone = document.getElementById("W71Someone");
-function PW71Someone(){W71Someone.play();document.getElementById("header").innerHTML= vocab[70].Word;}
+function PW71Someone(){random =70;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W72Church = document.getElementById("W72Church");
-function PW72Church(){W72Church.play();document.getElementById("header").innerHTML= vocab[71].Word;}
+function PW72Church(){random =71;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W73Clothes = document.getElementById("W73Clothes");
-function PW73Clothes(){W73Clothes.play();document.getElementById("header").innerHTML= vocab[72].Word;}
+function PW73Clothes(){random =72;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W74Instruc = document.getElementById("W74Instruc");
-function PW74Instruc(){document.getElementById("header").style.width= "32%";W74Instruc.play();document.getElementById("header").innerHTML= vocab[73].Word;}
+function PW74Instruc(){document.getElementById("header").style.width= "32%";random =73;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W75Donation = document.getElementById("W75Donation");
-function PW75Donation(){W75Donation.play();document.getElementById("header").innerHTML= vocab[74].Word;}
+function PW75Donation(){random =74;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W76Money = document.getElementById("W76Money");
-function PW76Money(){W76Money.play();document.getElementById("header").innerHTML= vocab[75].Word;}
+function PW76Money(){random =75;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W77Restaurant = document.getElementById("W77Restaurant");
-function PW77Restaurant(){W77Restaurant.play();document.getElementById("header").innerHTML= vocab[76].Word;}
+function PW77Restaurant(){random =76;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W78Crime = document.getElementById("W78Crime");
-function PW78Crime(){W78Crime.play();document.getElementById("header").innerHTML= vocab[77].Word;}
+function PW78Crime(){random =77;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W79Playground = document.getElementById("W79Playground");
-function PW79Playground(){W79Playground.play();document.getElementById("header").innerHTML= vocab[78].Word;}
+function PW79Playground(){random =78;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W80Bed = document.getElementById("W80Bed");
-function PW80Bed(){W80Bed.play();document.getElementById("header").innerHTML= vocab[79].Word;}
+function PW80Bed(){random =79;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W81Chair = document.getElementById("W81Chair");
-function PW81Chair(){W81Chair.play();document.getElementById("header").innerHTML= vocab[80].Word;}
+function PW81Chair(){random =80;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W82ADrink = document.getElementById("W82ADrink");
-function PW82ADrink(){W82ADrink.play();document.getElementById("header").innerHTML= vocab[81].Word;}
+function PW82ADrink(){random =81;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W83Food = document.getElementById("W83Food");
-function PW83Food(){W83Food.play();document.getElementById("header").innerHTML= vocab[82].Word;}
+function PW83Food(){random =82;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W84Park = document.getElementById("W84Park");
-function PW84Park(){W84Park.play();document.getElementById("header").innerHTML= vocab[83].Word;}
+function PW84Park(){random =83;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W85War = document.getElementById("W85War");
-function PW85War(){W85War.play();document.getElementById("header").innerHTML= vocab[84].Word;}
+function PW85War(){random =84;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W86Dumpling = document.getElementById("W86Dumpling");
-function PW86Dumpling(){W86Dumpling.play();document.getElementById("header").innerHTML= vocab[85].Word;}
+function PW86Dumpling(){random =85;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W87Bus_Stop = document.getElementById("W87Bus Stop");
-function PW87BusStop(){W87Bus_Stop.play();document.getElementById("header").innerHTML= vocab[86].Word;}
+function PW87BusStop(){random =86;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W88Theater = document.getElementById("W88Theater");
-function PW88Theater(){W88Theater.play();document.getElementById("header").innerHTML= vocab[87].Word;}
+function PW88Theater(){random =87;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W89Shoe = document.getElementById("W89Shoe");
-function PW89Shoe(){W89Shoe.play();document.getElementById("header").innerHTML= vocab[88].Word;}
+function PW89Shoe(){random =88;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W90Pants = document.getElementById("W90Pants");
-function PW90Pants(){W90Pants.play();document.getElementById("header").innerHTML= vocab[89].Word;}
+function PW90Pants(){random =89;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W91Country = document.getElementById("W91Country");
-function PW91Country(){W91Country.play();document.getElementById("header").innerHTML= vocab[90].Word;}
+function PW91Country(){random =90;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W92Product = document.getElementById("W92Product");
-function PW92Product(){W92Product.play();document.getElementById("header").innerHTML= vocab[91].Word;}
+function PW92Product(){random =91;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W93Property = document.getElementById("W93Property");
-function PW93Property(){W93Property.play();document.getElementById("header").innerHTML= vocab[92].Word;}
+function PW93Property(){random =92;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 // Create Array Nesting Objects To Store The Info Of Each Vocab Word
 
@@ -940,8 +943,8 @@ vocab[48]={Word:"일어나다:Levantar-se",Sound:W49StandUp,Type:"Ver"};
 vocab[49]={Word:"앉다:Sentar",Sound:W50Sit,Type:"Ver"};
 vocab[50]={Word:"마시다:Beber",Sound:W51Drink,Type:"Ver"};
 vocab[51]={Word:"먹다:Comer",Sound:W52Eat,Type:"Ver"};
-vocab[52]={Word:"운동하다:Exercício",Sound:W52Eat,Type:"Ver"};
-vocab[53]={Word:"파괴하다:Destruir",Sound:W53Excersice,Type:"Ver"};
+vocab[52]={Word:"운동하다:Exercício",Sound:W53Excersice,Type:"Ver"};
+vocab[53]={Word:"파괴하다:Destruir",Sound:W54Destroy,Type:"Ver"};
 vocab[54]={Word:"만들다:Fazer",Sound:W55Make,Type:"Ver"};
 vocab[55]={Word:"기다리다:Esperar",Sound:W56Wait,Type:"Ver"};
 vocab[56]={Word:"노래하다:Cantar",Sound:W57Sing,Type:"Ver"};
@@ -995,15 +998,17 @@ the different elements nested in the object inside the array*/
 
 function RandLoad(){
 document.getElementById("header").innerHTML=vocab[random].Word;
-vocab[random].Sound.play();
-random = Math.floor(Math.random()*vocab.length);
-}
+vocab[random].Sound.play();}
 
-// This Function Selects Elements
+//Selects The "header" Id And Plays The Sound Elements Currently Present When Clicked
+function HeadSoPlay(){vocab[random].Sound.play();} 
 
+// This Function Selects Sound Elements From let Array Vocab In A Linear Fashion
 function SelOrd(){
 for (var i=0;i<10;i++){document.getElementById("header").innerHTML= vocab[i].Word;
 vocab[i].Sound.play();}}
+
+
 
 </script>
 
