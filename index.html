@@ -10,8 +10,10 @@
 
 <!-- This Are The Audio Files For The Adjectives -->
 
-<h1 id="header" onclick="HeadSoPlay()">Word</h1> 
-<p onclick="SelOrd()">Click</p>
+<h1 id="header" onclick="HeadSoPlay()">Word</h1>
+<p onclick="SelRan()" id="RandomHe">Random Word</p>
+<p onclick="SelLiRanT()" id="RandomLi">Random List</p>  
+<p onclick="SelLiOrd()" id="LinearHe">Linear List</p>
 
 
 <audio id="W1Relaxed">
@@ -989,7 +991,7 @@ vocab[92]={Word:"재산:Propriedade",Sound:W93Property,Type:"Noun"};
 // This Selects Random Elements = Math.floor(Math.random() * NumberLi.length)
 
 /*Then create the variable that is going to store a random whole number.
-Elements of objects need to shate the same array "value"*/
+Elements of objects need to share the same array "value"*/
 
 var random = Math.floor(Math.random()*vocab.length);
 
@@ -1003,12 +1005,34 @@ vocab[random].Sound.play();}
 //Selects The "header" Id And Plays The Sound Elements Currently Present When Clicked
 function HeadSoPlay(){vocab[random].Sound.play();} 
 
-// This Function Selects Sound Elements From let Array Vocab In A Linear Fashion
-function SelOrd(){
-for (var i=0;i<10;i++){document.getElementById("header").innerHTML= vocab[i].Word;
-vocab[i].Sound.play();}}
+// This Function Selects Sound Elements From let vocab Array Vocab In A Linear Fashion
+
+var PlaLiSo;
 
 
+function SelLiOrd(){
+for(var i=0;i<=9;i++){document.getElementById("header").innerHTML= vocab[i].Word;vocab[i].Sound.play();}}
+
+
+
+
+// This Function Selects An Element From let Vocab Array In A Random Fashion
+
+function SelRan(){
+random = Math.floor(Math.random()*vocab.length);
+document.getElementById("header").innerHTML= vocab[random].Word;
+vocab[random].Sound.play();}
+
+// This Function Selects Elements From let Vocab Array In A Random Fashion
+
+function SelLiRan(){
+random = Math.floor(Math.random()*vocab.length);
+for(var i=0;i<10;i++){
+document.getElementById("header").innerHTML= vocab[random].Word;
+vocab[random].Sound.play();}}
+
+// This Function Selects Elements From let Vocab Array In A Random Fashion [Timed Out]
+function SelLiRanT(){setTimeout(SelLiRan,1000);}
 
 </script>
 
