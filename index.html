@@ -11,9 +11,9 @@
 <!-- This Are The Audio Files For The Adjectives -->
 
 <h1 id="header" onclick="HeadSoPlay()">Word</h1>
-<p onclick="SelRan()" id="RandomHe">Random Word</p>
-<p onclick="SelLiRanT()" id="RandomLi">Random List</p>  
-<p onclick="SelLiOrd()" id="LinearHe">Linear List</p>
+<p id="selection1" onclick="SelRan()" id="RandomHe">Random Word</p>
+<p id="selection2" onclick="SelLiRanT()" id="RandomLi">Random List</p>  
+<p id="selection3" onclick="SelLiOrd()" id="LinearHe">Linear List</p>
 
 
 <audio id="W1Relaxed">
@@ -317,7 +317,7 @@
 </audio>
 
 <audio id="W74Instruc">
-<source src="Korean Lesson 1 - Audio Files/Instr-Exple_SOULMIONG.mp3" type="audio/mpeg">
+<source src="Korean Lesson 1 - Audio Files/Instr_Exple_SOULMIONG.mp3" type="audio/mpeg">
 </audio>
 
 <audio id="W75Donation">
@@ -831,7 +831,7 @@ var W73Clothes = document.getElementById("W73Clothes");
 function PW73Clothes(){random =72;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
 
 var W74Instruc = document.getElementById("W74Instruc");
-function PW74Instruc(){document.getElementById("header").style.width= "32%";random =73;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
+function PW74Instruc(){random =73;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;document.getElementById("header").style.width= "32%";}
 
 var W75Donation = document.getElementById("W75Donation");
 function PW75Donation(){random =74;vocab[random].Sound.play();document.getElementById("header").innerHTML= vocab[random].Word;}
@@ -966,7 +966,7 @@ vocab[69]={Word:"영화:Filme",Sound:W70Movie,Type:"Noun"};
 vocab[70]={Word:"누군가:Alguém",Sound:W71Someone,Type:"Noun"};
 vocab[71]={Word:"교회:Igreja",Sound:W72Church,Type:"Noun"};
 vocab[72]={Word:"옷:Roupas",Sound:W73Clothes,Type:"Noun"};
-vocab[73]={Word:"설명:Instrução / Explicação",W74Instruc,Type:"Noun"};
+vocab[73]={Word:"설명:Instrução / Explicação",Sound:W74Instruc,Type:"Noun"};
 vocab[74]={Word:"기부:Doação",Sound:W75Donation,Type:"Noun"};
 vocab[75]={Word:"돈:Dinheiro",Sound:W76Money,Type:"Noun"};
 vocab[76]={Word:"식당:Restaurante",Sound:W77Restaurant,Type:"Noun"};
@@ -1009,12 +1009,24 @@ function HeadSoPlay(){vocab[random].Sound.play();}
 
 var PlaLiSo;
 
+var linear = 0;
+
 
 function SelLiOrd(){
-for(var i=0;i<=9;i++){document.getElementById("header").innerHTML= vocab[i].Word;vocab[i].Sound.play();}}
+
+document.getElementById("header").innerHTML= vocab[linear].Word;vocab[linear].Sound.play();
+linear++;
+
+
+setInterval(function(){
+if(linear == 93){linear = 0;}
+document.getElementById("header").innerHTML= vocab[linear].Word;vocab[linear].Sound.play();
+linear++;},2000);
 
 
 
+
+}
 
 // This Function Selects An Element From let Vocab Array In A Random Fashion
 

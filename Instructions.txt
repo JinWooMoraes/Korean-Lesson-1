@@ -1,0 +1,12 @@
+Correct:
+
+for(let i=0; i<10; i++){setTimeout(function(){console.log(i);},2000);}
+
+
+for(let i=0; i<10; i++){setTimeout(function(){console.log(i);},2000);}
+
+Wrong:
+
+for(let i =0;i<10;i++){setTimeout(function(){console.log(i);},2000);}
+
+https://www.freecodecamp.org/learn
